@@ -22,7 +22,9 @@ def main():
         else:
             calories.append(int(text.replace("\n", "")))
 
-    print(max(elves))
+    print(f"max: {max(elves)}")
+    elves.sort(reverse=True)
+    print(f"top 3: {elves[0] + elves[1] + elves[2]} (sum)")
 
 
 main()
